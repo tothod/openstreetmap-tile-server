@@ -181,4 +181,6 @@ COPY indexes.sql /
 ENTRYPOINT ["/run.sh"]
 CMD []
 
+VOLUME /PBF
+VOLUME /var/lib/postgresql/12/main
 EXPOSE 80 5432
