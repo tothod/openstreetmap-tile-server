@@ -8,6 +8,7 @@ ENV TZ=UTC
 ENV AUTOVACUUM=on
 ENV UPDATES=disabled
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+RUN mkdir /PBF
 
 # Install dependencies
 RUN apt-get update \
