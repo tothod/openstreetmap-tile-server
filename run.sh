@@ -102,6 +102,7 @@ if [ "$1" = "run" ]; then
     createPostgresConfig
     service postgresql start
     service apache2 restart
+    sudo -u postgres createuser renderer
     setPostgresPassword
 
     # Configure renderd threads
